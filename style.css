@@ -1,0 +1,64 @@
+*{margin: 0; padding: 0;}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #4D5350;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+header .log{
+    margin-left: 12px;
+}
+
+
+header .centernav{
+    display: flex;
+    margin: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#finder{
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: hidden;
+    margin-right: 20px;
+}
+
+#finder:focus{
+    outline: none;
+}
+
+.image{
+    border: hidden;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.cultivos{
+    width: 100%;
+    height: 400px;
+    background-color: #597869;
+    display: flex;
+    align-items: center;
+}
+
+.grano{
+    background-color: aliceblue;
+    width: 180px;
+    height: 230px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+}
