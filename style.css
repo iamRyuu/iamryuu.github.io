@@ -46,7 +46,17 @@ a{
     margin-bottom: 16px;
 }
 
-.cultivos{
+.head-cultivos{
+    background-color: #597869;
+    color: white;
+    font-family: 'Cabin', sans-serif ;
+}
+
+div h1{
+    text-align: center;
+}
+
+.tarjeta-cultivos{
     width: 100%;
     height: 400px;
     background-color: #597869;
@@ -61,4 +71,8 @@ a{
     border-radius: 15px;
     text-align: center;
     margin: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
 }
