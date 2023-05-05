@@ -118,6 +118,7 @@ a{
     color: #413F3F;
     width: 100%;
     height: 60vh;
+    margin: auto;
 }
 
 .area-div{
@@ -131,6 +132,8 @@ a{
     width: 450px;
     margin: auto;
     border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .text-area{
