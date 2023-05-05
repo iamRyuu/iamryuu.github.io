@@ -2,22 +2,44 @@
 
 header{
     width: 100%;
-    height: 60px;
+    height: 100px;
     background-color: #4D5350;
     color: white;
     font-family: 'Cabin', sans-serif;
     display: flex;
     align-items: center;
-}
-
-header .log{
-    margin-left: 12px;
-}
-
-
-header .centernav{
-    display: flex;
     margin: auto;
+    justify-content: center;
+}
+
+.centerlinks{
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.centerlinks2{
+    margin: auto;
+    text-align: center;
+    display: grid;
+    font-size: 18px;
+}
+
+#btnSesion{
+    background-color: #2CA475;
+    color: white;
+    font-family: 'Cabin',sans-serif;
+    border: 1.5px solid #413F3F;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    margin-left: 16px;
+}
+
+.centernav{
+    width: 300px;
+    text-align: center;
 }
 
 a{
@@ -28,11 +50,13 @@ a{
 
 #finder{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 5px;
     text-decoration: none;
     border: hidden;
-    margin-right: 20px;
+    width: 300px;
+    height: 28px;
+    border: 1.5px solid #413F3F;
 }
 
 #finder:focus{
@@ -66,10 +90,11 @@ a{
 }
 
 .tarjetas{
-    width: 100%;
+    width: 80%;
     height: 400px;
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
 .grano{
@@ -114,10 +139,18 @@ a{
 
 footer{
     width: 100%;
-    height: 60px;
+    height: 180px;
     background-color: #4D5350;
     color: white;
     font-family: 'Cabin', sans-serif;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.foot-area{
+    /* border: 1px solid gray; */
+    width: 250px;
+    text-align: center;
+    margin: auto;
 }
