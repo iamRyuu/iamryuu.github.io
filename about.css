@@ -65,96 +65,50 @@ a{
 
 .image{
     border: hidden;
-    height: 120px;
+    height: 480px;
     width: 100%;
-    margin-bottom: 16px;
-    
+    margin: auto;
 }
 
-.head-sections{
+.enfoque{
+    background-color: #E9E9E9;
+    width: 100%;
+    height: 800px;
     font-family: 'Cabin', sans-serif ;
 }
 
-#titulo-cultivo{
-    text-align: center;
-    color: white;
+.head{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 80px;
 }
 
-.cultivos{
-    background-color: #597869;
-}
 .linebar{
-    background-color: #4D5350;
+    background-color: #303030;
     margin: auto;
-    width: 90%;
+    margin-top: 8px;
+    width: 80%;
     height: 2.5px;
 }
 
-.tarjetas{
+.box{
+    border: 1px solid black;
     width: 80%;
-    height: 400px;
+    height: 600px;
     display: flex;
-    align-items: center;
-    margin: auto;
-}
-
-.grano{
-    background-color: aliceblue;
-    width: 180px;
-    height: 230px;
-    border-radius: 15px;
-    font-size: 18px;
-    font-family: 'Cabin', sans-serif;
-    text-align: center;
-    margin: auto;
-    display: grid;
-    align-items: center;
     justify-content: center;
-
-}
-
-.areas{
-    background-color: #D9D9D9;
-    text-align: center;
-    color: #413F3F;
-    width: 100%;
-    height: 60vh;
-    margin: auto;
-}
-
-.area-div{
-    font-size: 18px;
-    font-family: 'Cabin', sans-serif;
-    text-align: center;
-    display: flex;
     align-items: center;
-    background-color: #5E5D5D;
-    color: white;
-    width: 450px;
     margin: auto;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+
 }
 
-.text-area{
+.box1{
+    border: 1px solid black;
+    width: 550px;
+    height: 500px;
     margin: auto;
-}
-
-footer{
-    width: 100%;
-    height: 180px;
-    background-color: #4D5350;
-    color: white;
-    font-family: 'Cabin', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.foot-area{
-    /* border: 1px solid gray; */
-    width: 250px;
-    text-align: center;
-    margin: auto;
+    
 }
