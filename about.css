@@ -70,14 +70,24 @@ a{
     margin: auto;
 }
 
-.enfoque{
-    background-color: #E9E9E9;
+.container{
     width: 100%;
-    height: 800px;
+    height: 980px;
     font-family: 'Cabin', sans-serif ;
 }
 
+.container2{
+    width: 100%;
+    height: 980px;
+    font-family: 'Cabin', sans-serif ;
+    background-image: url(/src/landingimage/flowers.png);
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    background-position: bottom;
+}
+
 .head{
+    font-size: 20px;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -87,7 +97,6 @@ a{
 }
 
 .linebar{
-    background-color: #303030;
     margin: auto;
     margin-top: 8px;
     width: 80%;
@@ -95,20 +104,99 @@ a{
 }
 
 .box{
-    border: 1px solid black;
     width: 80%;
-    height: 600px;
+    height: 800px;
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    align-content: center;
+    margin: auto;
+
+}
+
+.box2{
+    width: 80%;
+    height: 800px;
     margin: auto;
 
 }
 
 .box1{
-    border: 1px solid black;
+    border: outset #303030;
+    box-shadow: 6px 10px 50px #413F3F;
     width: 550px;
     height: 500px;
     margin: auto;
-    
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+}
+
+.box1 h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.box1 p{
+    font-size: 20px;
+}
+
+.princ{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.val{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt{
+    color: white;
+    width: 350px;
+    height: 80%;
+    margin: auto;
+}
+
+.txt h1{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 2px #f1f1f1;
+}
+
+.txt p{
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 0 0 3px #f1f1f1;
+}
+
+footer{
+    width: 100%;
+    height: 180px;
+    background-color: #4D5350;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-area{
+    /* border: 1px solid gray; */
+    width: 250px;
+    text-align: center;
+    margin: auto;
 }
