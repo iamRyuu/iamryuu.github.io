@@ -12,9 +12,8 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="help-atencion.css">
-    <title>Atencion-Cliente | HELP</title>
-    
+    <link rel="stylesheet" href="help-oportunidad.css">
+    <title>Oportunidad laboral | HELP</title>
 </head>
 <body>
     <nav>
@@ -45,8 +44,8 @@
     <section class="container">
         <div class="box">
             <div class="items">
-                <img src="src/icons/atencioncliente.png" width="90px">
-                <h2>Atencion al cliente</h2>
+                <img src="src/icons/oportunidadlaboral.png" width="90px">
+                <h2>Oportunidad laboral</h2>
             </div>
 
             <!-- side bar -->
@@ -54,15 +53,26 @@
             </div>
 
             <div class="info">
-                <h2>Nombre completo</h2>
-                <input type="text" class="inputs">
-                
-                <h2>Número telefónico</h2>
-                <input type="text" class="inputs">
+                <div class="p1">
+                    <h2>Nombre completo</h2>
+                    <input type="text" class="inputs">
+                    
+                    <h2>E-mail</h2>
+                    <input type="text" class="inputs">
+                </div>
 
-                <h2>Correo electrónico</h2>
-                <input type="text" class="inputs">
-                
+                <div class="p2">
+                    <div class="minibox">
+                        <h2>Número telefónico</h2>
+                        <input type="text" class="inputs" style="width: 250px;">
+                    </div>
+                    
+                    <div class="minibox2">
+                        <h2>Adjuntar CV</h2>
+                        <button id="btnCV">Elegir archivo</button>
+                    </div>
+                </div>
+
                 <button id="btnSend">Enviar</button>
             </div>
         </div>

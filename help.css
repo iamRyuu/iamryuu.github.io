@@ -110,6 +110,11 @@ nav{
 
 .target h2{
     margin-top: 20px;
+    text-decoration: none;
+}
+
+.target a{
+    text-decoration: none;
 }
 
 footer{

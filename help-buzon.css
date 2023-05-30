@@ -90,16 +90,16 @@ nav{
 }
 
 .box{
+    border: 1px solid black;
     width: 80em;
-    height: 30em;
+    height: 32em;
     background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: 2px 5px 8px #a7a4a4;
     display: flex;
     margin: auto;
     align-items: center;
-    justify-content: center;
-
+    justify-content: center;;
 }
 
 .items{
@@ -114,12 +114,12 @@ nav{
 .bar{
     background-color: #000000;
     width: 2.5px;
-    height: 400px;
+    height: 450px;
 }
 
 .info{
-    width: 1000px;
-    height: 400px;
+    width: 1200px;
+    height: 450px;
     display: grid;
     align-content: center;
     justify-items: center;
