@@ -1,98 +1,188 @@
-*{margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap');
 
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
 }
 
-nav{
-    background-color: #4D5350;
+
+
+body {
+
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 6em;
+    height: 80px;
+    background: #4D5350;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+}
+
+.logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+header ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+header ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+header .search{
+    position: relative;
     display: flex;
     justify-content: center;
-    margin: auto;
-}
-
-.navcomponents1{
-    width: 10em;
-    font-size: 25px;
-    display: flex;
-    justify-content: left;
     align-items: center;
+    font-size: 1.5em;
+    z-index: 10;
+    cursor: pointer;
 }
 
-.navcomponents2{
-    width: 55em;
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    text-decoration: none;
-    text-align: center;
-}
-
-.navcomponents2 a{
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 20px;
-    color: white;
-    margin-left: 30px;
-    margin-right: 30px;
+.searchbox{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    display: none;
     
 }
 
-#finder{
-    text-align: center;
-    font-size: 16px;
-    border-radius: 17px;
-    text-decoration: none;
-    border: hidden;
-    width: 450px;
-    height: 35px;
-    margin-bottom: 10px;
+.searchbox.active{
+    
+    height: 12%;
+    width: 100%;
+    display: flex;
+    right: 0;
+    padding: 0 30px;
+    background: #ffffff;
+    align-items: center;
+    transition: 0.5s ease-in-out;
 }
 
-#finder:focus{
+.searchbox input{
+    width: 100%;
+    border: none;
     outline: none;
-}
-.navcomponents3{
-    width: 22em;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    
+    color: #333;
+    height: 50px;
+    font-size: 1.25em;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 
-.navcomponents3 a{
-    margin-left: 12px;
-    margin-right: 12px;
+
+.searchbtn{
+    position: relative;
+    left: 30px;
+    top: 2.5px;
+    transition: 0.5s ease-in-out;
+    color: #ffffff;
 }
 
-.btn{
-    width: 120px;
-    height: 48px;
-    border-radius: 14px;
-    border: 1.5px solid #413F3F;
-    box-shadow: 2px 2px 2px #413F3F;
-    font-size: 16px;
-    font-family: 'Cabin', sans-serif;
-    margin-left: 12px;
-    margin-right: 12px;
-
+.searchbtn.active{
+    left: 0;
 }
+
+.closebtn{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    scale: 0;
+}
+
+.closebtn.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    scale: 1;
+}
+
+body{
+    display: block;
+    background: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.menutoggle{
+    position: relative;
+    display: none;
+    color: #ffffff;
+}
+
+/* Aqui culmina el navbar */
 
 .container{
     width: 100%;
-    height: 40em;
+    height: relative;
     background-color: #DEDEDE;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding: 2em;
 }
 
 .box{
-    width: 32em;
-    height: 32em;
+    width: 90%;
+    height: relative;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -103,8 +193,9 @@ nav{
 }
 
 .bx1{
-    width: 32em;
-    height: 220px;
+    width: 90%;
+    height: 45vw;
+    border-bottom: 2px solid rgb(57, 57, 57);
     padding-top: 12px;
     display: grid;
     align-content: center;
@@ -112,9 +203,9 @@ nav{
 }
 
 .bx1 h2{
-    width: 400px;
-    height: 20px;
-    font-size: 16px;
+    width: 90%;
+    height: 1em;
+    font-size: 1em;
     font-family: 'Inter', sans-serif;
     margin-left: 20px;
     margin-bottom: 3px;
@@ -126,35 +217,34 @@ nav{
     background-color: #E4E4E4;
     border-radius: 40px;
     border: none;
-    width: 450px;
-    height: 40px;
+    width: 90%;
+    height: 2.8em;
     margin-bottom: 20px;
 }
 
 .bx2{
-    width: 32em;
-    height: 260px;
+    width: 100%;
+    height: 40vw;
     display: grid;
     align-content: center;
     justify-items: center;
 }
 
 .bx3{
-    width: 32em;
-    height: 200px;
+    width: 100%;
+    height: 25vw;
     display: flex;
-    justify-content: center;
     align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
 }
 
-.bar{
-    background-color: #413F3F;
-    width: 480px;
-    height: 3.5px;
-}
 
 .social{
-    width: 400px;
+    width: 85%;
     height: 40px;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -164,12 +254,13 @@ nav{
 }
 
 .btnAcount{
-    width: 150px;
-    height: 35px;
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 35%;
+    height: 10vw;
+    padding: 1em;
+    text-align: center;
+    margin: auto;
     color: white;
-    font-size: 16px;
+    font-size: 0.8em;
     font-weight: bold;
     border: none;
     box-shadow: 1px 1px 4px #4D5350;
@@ -177,17 +268,71 @@ nav{
 
 footer{
     width: 100%;
-    height: 180px;
+    height: relative;
     background-color: #4D5350;
     color: white;
-    font-family: 'Cabin', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .foot-area{
-    width: 250px;
+    width: 100%;
+    font-size: 50%;
     text-align: center;
     margin: auto;
+    padding: 1em;
+}
+
+.foot-area .icon-red img{
+    width: 15%;
+}
+
+@media (max-width: 800px) {
+    .searchbtn{
+        left: 0;
+    }
+    
+    .menutoggle{
+        position: absolute;
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+    }
+    
+    header .navigation{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+
+    header.open .navigation{
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #4D5350 ;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    header.open .navigation li a{
+        font-size: 1.25em;
+
+    }
+
+    ul.navigation {
+        display: none;
+    }
+    
+    .hide{
+        display: none;
+    }
 }
