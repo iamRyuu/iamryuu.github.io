@@ -5,32 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/help.css">
-    <title>HELP | AgroNic</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/Styles/help-buzon.css">
+    <title>Buzón de Sugerencias | HELP</title>
 </head>
 <body>
     <nav>
         <div class="navcomponents1">
-            <img src="src/icons/logo.png" width="80px">
+            <img src="/src/icons/logo.png" width="80px">
             <h1 style="color: white;">AgroNic</h1>
         </div>
 
         <div class="navcomponents2">
             <input type="text" id="finder" placeholder="BUSCAR">
             <div class="links">
-                <a href="/index.html">Inicio</a>
-                <a href="/about.html">Acerca</a>
-                <a href="/help.html">Ayuda</a>
+                <a href="/Pages/index.html">Inicio</a>
+                <a href="/Pages/about.html">Acerca</a>
+                <a href="/Pages/help.html">Ayuda</a>
             </div>
         </div>
 
         <div class="navcomponents3">
             <a href="">
-                <img src="src/icons/carro.png" width="40px">
+                <img src="/src/icons/carro.png" width="40px">
             </a>
             
-            <a href="/login.html">
+            <a href="/Pages/login.html">
                 <button class="btn" style="background-color: #2CA475; color: white; ">Iniciar Sesion</button>
             </a>
         </div>
@@ -38,25 +44,23 @@
 
     <section class="container">
         <div class="box">
-            <div class="target">
-                <img src="/src/icons/atencioncliente.png"    width="80px" height="80px">
-                <a href="help-atencion.html">
-                    <h2 style="color: black;">Atención al cliente</h2>
-                </a>
-            </div>
-            
-            <div class="target">
-                <img src="/src/icons/buzonsugerencias.png"   width="80px" height="80px">
-                <a href="help-buzon.html">
-                    <h2 style="color: black;">Buzón de sugerencias</h2>
-                </a>
+            <div class="items">
+                <img src="/src/icons/buzonsugerencias.png" width="90px">
+                <h2>Buzón de sugerencias</h2>
             </div>
 
-            <div class="target">
-                <img src="/src/icons/oportunidadlaboral.png" width="80px" height="80px">
-                <a href="help-oportunidad.html">
-                    <h2 style="color: black;">Oportunidad Laboral</h2>
-                </a>
+            <!-- side bar -->
+            <div class="bar">
+            </div>
+
+            <div class="info">
+                <h2>Nombre completo</h2>
+                <input type="text" class="inputs">
+                
+                <h2>Comentario</h2>
+                <input type="text" class="inputs" style="height: 180px;">
+
+                <button id="btnSend">Enviar</button>
             </div>
         </div>
     </section>
@@ -76,7 +80,7 @@
         <div class="foot-area">
             <h2>Social Media</h2>
             <div class="icon-red">
-                <a href="https://www.instagram.com/jorgeobnd_/">
+                <a href="https://www.instagram.com/jxrg16_/">
                     <img src="/src/icons/iconig.png" alt="">
                 </a>
                 
@@ -88,7 +92,7 @@
                     <img src="/src/icons/iconwsp.png" alt="">
                 </a>
                 
-                <img src="src/icons/icontwt.png" alt="">
+                <img src="/src/icons/icontwt.png" alt="">
             </div>
         </div>
     </footer>

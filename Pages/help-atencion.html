@@ -5,59 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Estilos de la pagina -->
+    <!-- Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="login.css">
-    <title>Login | AgroNIC</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/Styles/help-atencion.css">
+    <title>Atencion-Cliente | HELP</title>
+    
 </head>
 <body>
     <nav>
         <div class="navcomponents1">
-            <img src="src/icons/logo.png" width="80px">
+            <img src="/src/icons/logo.png" width="80px">
             <h1 style="color: white;">AgroNic</h1>
         </div>
 
         <div class="navcomponents2">
             <input type="text" id="finder" placeholder="BUSCAR">
             <div class="links">
-                <a href="/index.html">Inicio</a>
-                <a href="/about.html">Acerca</a>
-                <a href="/help.html">Ayuda</a>
+                <a href="/Pages/index.html">Inicio</a>
+                <a href="/Pages/about.html">Acerca</a>
+                <a href="/Pages/help.html">Ayuda</a>
             </div>
         </div>
 
         <div class="navcomponents3">
-            <!-- <a href="">
-                <img src="src/icons/carro.png" width="40px">
+            <a href="">
+                <img src="/src/icons/carro.png" width="40px">
             </a>
             
-            <a href="/login.html">
+            <a href="/Pages/login.html">
                 <button class="btn" style="background-color: #2CA475; color: white; ">Iniciar Sesion</button>
-            </a> -->
-        </div>
+            </a>
     </nav>
 
     <section class="container">
         <div class="box">
-            <div class="bx1">
-                <h2>E-mail</h2>
-                <input type="text" class="inputs">
-                    
+            <div class="items">
+                <img src="/src/icons/atencioncliente.png" width="90px">
+                <h2>Atencion al cliente</h2>
+            </div>
+
+            <!-- side bar -->
+            <div class="bar">
+            </div>
+
+            <div class="info">
                 <h2>Nombre completo</h2>
                 <input type="text" class="inputs">
-            </div>
+                
+                <h2>Número telefónico</h2>
+                <input type="text" class="inputs">
 
-            <!-- divison bar -->
-            <div class="bar"></div>
-
-            <div class="bx2">
-                <button class="social" style="font-weight: bold; background-color: #F7F7F7;">Iniciar sesión con Google</button>
-                <button class="social" style="color: white; background-color: #3D519A; font-weight: bold;">Iniciar sesión con Facebook</button>
-            </div>
-
-            <div class="bx3">
-                <button class="btnAcount" style="background-color: #2CA475;">Iniciar Sesión</button>
-                <button class="btnAcount" style="background-color: #CBBB81;">Registrarse</button>
+                <h2>Correo electrónico</h2>
+                <input type="text" class="inputs">
+                
+                <button id="btnSend">Enviar</button>
             </div>
         </div>
     </section>
@@ -77,7 +83,7 @@
         <div class="foot-area">
             <h2>Social Media</h2>
             <div class="icon-red">
-                <a href="https://www.instagram.com/jorgeobnd_/">
+                <a href="https://www.instagram.com/jxrg16_/">
                     <img src="/src/icons/iconig.png" alt="">
                 </a>
                 
@@ -89,10 +95,9 @@
                     <img src="/src/icons/iconwsp.png" alt="">
                 </a>
                 
-                <img src="src/icons/icontwt.png" alt="">
+                <img src="/src/icons/icontwt.png" alt="">
             </div>
         </div>
     </footer>
-
 </body>
 </html>
