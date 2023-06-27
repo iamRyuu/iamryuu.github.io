@@ -6,49 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- estilos -->
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Styles/about.css">
 
     <title>About | AgroNic</title>
 </head>
 <body>
-    <nav>
-        <div class="navcomponents1">
-            <img src="/src/icons/logo.png" width="80px">
-            <h1 style="color: white;">AgroNic</h1>
-        </div>
-
-        <div class="navcomponents2">
-            <input type="text" id="finder" placeholder="BUSCAR">
-            <div class="links">
-                <a href="/Pages/index.html">Inicio</a>
-                <a href="/Pages/about.html">Acerca</a>
-                <a href="/Pages/help.html">Ayuda</a>
+    <header>
+        <label class="logo"><img src="/src/icons/logo.png" alt=""><p>AgroNic</p></label>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closebtn"></ion-icon>
+                </span>
             </div>
+            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
         </div>
-
-        <div class="navcomponents3">
-            <a href="">
-                <img src="/src/icons/carro.png" width="40px">
-            </a>
-            
-            <a href="/Pages/login.html">
-                <button class="btn" style="background-color: #2CA475; color: white; ">Iniciar Sesion</button>
-            </a>
+        
+        <div class="searchbox">
+            <input type="text" placeholder="Buscar . . .">
         </div>
-    </nav>
+    </header>
 
-    <div class="image">
-        <img src="/src/landingimage/aboutimage.png" width="100%" height="480px">
-    </div>
+    <div class="wallpaper"></div>
 
     <section class="container" style="background-color: #E9E9E9;">
-        <div class="head">
-            <h1 style="color: black;">Misión y Visión</h1>
+        <div class="text">
+            <h2>Misión y Visión</h2>
         </div>
 
-        <div class="linebar" style="background-color:#303030;"></div>
-        
         <div class="box">
             <div class="box1">
                 <img src="/src/icons/mision.png" alt="">
@@ -71,41 +62,37 @@
     </section>
 
     <div class="container2" style="background-color: #262F2C;">
-        <div class="head">
-            <h1 style="color: #F1F1F1;">Valores y Principios</h1>
+        <div class="text">
+            <h2 style="color: #F1F1F1; border-bottom:  2.5px solid #dbdbdb;">Valores y Principios</h2>
         </div>
 
         <div class="linebar" style="background-color: #F1F1F1;"></div>
 
         <section class="box2">
-            <div class="princ">
-                <div class="txt">
-                    <h1>Integridad</h1>
-                    <p>Capacidad para contruir relaciones
-                        basadas en un comportamiento
-                        honesto y veraz
-                    </p>
-                </div>
-
-                <div class="txt">
-                    <h1>Tenacidad</h1>
-                    <p>Persistencia para lograr las metas
-                        establecidas por la organización
-                        logros completados mediante trabajo
-                        en equipo
-                    </p>
-                </div>
+            <div class="txt">
+                <h1>Integridad</h1>
+                <p>Capacidad para contruir relaciones
+                    basadas en un comportamiento
+                    honesto y veraz
+                </p>
             </div>
 
-            <div class="val">
-                <div class="txt">
-                    <h1>Excelencia</h1>
-                    <p>Calidad sorprendente de las tareas
-                        realizadas, así como los productos o
-                        servicios entregados, con base en el
-                        dominio de los conocimientos relacionados
-                    </p>
-                </div>
+            <div class="txt">
+                <h1>Excelencia</h1>
+                <p>Calidad sorprendente de las tareas
+                    realizadas, así como los productos o
+                    servicios entregados, con base en el
+                    dominio de los conocimientos relacionados
+                </p>
+            </div>
+
+            <div class="txt">
+                <h1>Tenacidad</h1>
+                <p>Persistencia para lograr las metas
+                    establecidas por la organización
+                    logros completados mediante trabajo
+                    en equipo
+                </p>
             </div>
         </section>
 
@@ -142,5 +129,13 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script header -->
+    <script src="/JavaScript/header.js"></script>
 </body>
 </html>
