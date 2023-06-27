@@ -172,7 +172,7 @@ body{
 
 .container{
     width: 100%;
-    height: relative;
+    height: 100%;
     background-color: #DEDEDE;
     display: flex;
     align-items: center;
