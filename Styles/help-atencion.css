@@ -257,6 +257,7 @@ body{
     border: none;
     border-radius: 12px;
     box-shadow: 0px 1px 4px #4D5350;
+    margin-top: 12px;
 }
 
 footer{
@@ -401,6 +402,6 @@ footer{
     #btnSend{
         font-size: 1.2vw;
         width: 40%;
-        height: 2vw;
+        height: 3vw;
     }
 }
