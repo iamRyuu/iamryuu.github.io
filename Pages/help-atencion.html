@@ -17,40 +17,37 @@
     
 </head>
 <body>
-    <nav>
-        <div class="navcomponents1">
-            <img src="/src/icons/logo.png" width="80px">
-            <h1 style="color: white;">AgroNic</h1>
-        </div>
-
-        <div class="navcomponents2">
-            <input type="text" id="finder" placeholder="BUSCAR">
-            <div class="links">
-                <a href="/Pages/index.html">Inicio</a>
-                <a href="/Pages/about.html">Acerca</a>
-                <a href="/Pages/help.html">Ayuda</a>
+    <header>
+        <label class="logo"><img src="/src/icons/logo.png" alt=""><p>AgroNic</p></label>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/Pages/about.html">Acerca</a></li>
+                <li><a href="/Pages/help.html">Ayuda</a></li>
+                <li><a href="/Pages/login.html">Iniciar Sesión</a></li>
+                <li><a href="">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closebtn"></ion-icon>
+                </span>
             </div>
+            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
         </div>
-
-        <div class="navcomponents3">
-            <a href="">
-                <img src="/src/icons/carro.png" width="40px">
-            </a>
-            
-            <a href="/Pages/login.html">
-                <button class="btn" style="background-color: #2CA475; color: white; ">Iniciar Sesion</button>
-            </a>
-    </nav>
+        
+        <div class="searchbox">
+            <input type="text" placeholder="Buscar . . .">
+        </div>
+    </header>
 
     <section class="container">
         <div class="box">
             <div class="items">
                 <img src="/src/icons/atencioncliente.png" width="90px">
                 <h2>Atencion al cliente</h2>
-            </div>
-
-            <!-- side bar -->
-            <div class="bar">
             </div>
 
             <div class="info">
@@ -99,5 +96,14 @@
             </div>
         </div>
     </footer>
+
+
+
+    <!-- Icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script header -->
+    <script src="/JavaScript/header.js"></script>
 </body>
 </html>
