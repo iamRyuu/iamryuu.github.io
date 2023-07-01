@@ -273,8 +273,10 @@ tbody{
     width: 100%;
     height: relative;
     min-height: 40vw;
+    padding: 1em;
     border-top:1px solid rgb(152, 152, 152) ;
     background-color: #F5F5F5;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,7 +309,7 @@ tbody{
 }
 
 .caja2 .inputs{
-    width: 32%;
+    width: 30%;
     margin: auto;
 }
 
