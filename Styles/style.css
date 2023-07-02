@@ -182,7 +182,7 @@ body{
     height: relative;
     display: flex;
     flex-direction: column;
-    background: #77937b;
+    background: #617563;
 }
 
 .text{
@@ -208,17 +208,19 @@ body{
     width: 95%;
     height: relative;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
     gap: 1em;
     align-items: center;
+    justify-content: center;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
 }
 
 .items{
+    box-shadow: 8px 10px 15px #363535;
     background-color: aliceblue;
-    width: 75%;
-    height: 40vw;
+    width: 90%;
+    height: 32vw;
     border-radius: 15px;
     font-size: 3.5vw;
     text-align: center;
@@ -229,7 +231,9 @@ body{
 }
 
 .items img{
-    width: 78%;
+    border-radius: 5px;
+    width: 75%;
+    margin-bottom: 12px;
 }
 
 .another-area{
@@ -245,7 +249,6 @@ body{
     width: 100%;
     height: relative;
     display: grid;
-    align-items: center;
 }
 
 
@@ -430,6 +433,12 @@ footer{
 }
 
 @media (min-width: 850px){
+    .grain-items{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-content: center;
+        justify-content: center;   
+    }
     .text h2{
         font-size: 3vw;
     }
@@ -437,12 +446,10 @@ footer{
     .another-area .text h2{
         font-size: 2vw;
     }
-
-
     .items{
         width: 65%;
         height: 20vw;
-        font-size: 2vw;
+        font-size: 1.4vw;
     }
 
     .area{
@@ -461,10 +468,12 @@ footer{
     }
 
     .grain{
-        height: 35vw;
+        height: relative;
     }
 
     .tarjetas{
-        height: 20vw;
+        padding: 2em;
+        width: 90%;
+        height: relative;
     }
 }
