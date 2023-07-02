@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="/Styles/admin.css">
+    <title>Admin - Page | AgroNic</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="/src/icons/logo.png" alt="">
+                    <h2>AgroNic</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" >
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Empleado</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Ordenes</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analisis</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Mensajes</h3>
+                    <span class="message-count">10</span>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Productos</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Reportes</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Configuraciones</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Añadir producto</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Salir</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- aqui termina el aside -->
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Ventas Totales</h3>
+                            <h1>C$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Hace 24 horas</small>
+                </div>
+                <!-- /*-----------FIN DE LA PRIMERA CARD: ventas-----------*/ -->
+
+                <div class="expenses">
+                    <span class="material-icons-sharp">bar_chart</span>
+
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Ventas Gastos</h3>
+                            <h1>C$14,160</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Hace 24 horas</small>
+                </div>
+                <!-- /*-----------FIN DE LA PRIMERA CARD: Gastos-----------*/ -->
+
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Ventas Totales</h3>
+                            <h1>C$10,864</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>84%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Hace 24 horas</small>
+                </div>
+                <!-- /*-----------FIN DE LA PRIMERA CARD: Ingreso-----------*/ -->
+
+            </div>
+            <!-- fin de las cards -->
+
+            <div class="recent-orders">
+                <h2>Ordenes Recientes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Producto</th>
+                            <th>Numero del Producto</th>
+                            <th>Pago</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maíz</td>
+                            <td>1016</td>
+                            <td>Pendiente</td>
+                            <td class="warning">En Proceso</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cacao</td>
+                            <td>1921</td>
+                            <td>Pendiente</td>
+                            <td class="warning">En Proceso</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Arroz</td>
+                            <td>2020</td>
+                            <td>Pendiente</td>
+                            <td class="warning">En Proceso</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Frijoles</td>
+                            <td>2023</td>
+                            <td>Pendiente</td>
+                            <td class="warning">En Proceso</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Trigo</td>
+                            <td>2001</td>
+                            <td>Pendiente</td>
+                            <td class="warning">En Proceso</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-- Fin del main -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toogler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hola! <b>Ing. Jorge</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/src/profile-pic/admin.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- AQUI CULMINA EL TOP -->
+            
+            <div class="recent-updates">
+                <h2>Actualizaciones Recientes</h2>
+
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo1.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mega Mente</b> Se cayó el server</p>
+                            <small class="text-muted">Hace 2 horas</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Peso Plomo</b> La verdad ojala no vayamos a convo.</p>
+                            <small class="text-muted">Hace 5 minutos</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Maicol Towers</b> zzzZZZZZ</p>
+                            <small class="text-muted">Hace 1 año</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------fin de las actualizaciones recientes------------>
+
+            <div class="sales-analytics">
+                <h2>Analisis de Ventas</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Ordenes en linea</h3>
+                            <small class="text-muted">Hace 24 horas</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>1100</h3>
+                    </div>
+                </div>
+
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Ordenes en local</h3>
+                            <small class="text-muted">Hace 24 horas</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+
+                <div class="item customer">
+                    <div class="icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Nuevos Empleados</h3>
+                            <small class="text-muted">Hace 24 horas</small>
+                        </div>
+                        <h5 class="success">+25%</h5>
+                        <h3>87</h3>
+                    </div>
+                </div>
+
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Añadir Productos</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts para el menu -->
+    <script src="/JavaScript/admin.js"></script>
+</body>
+</html>
