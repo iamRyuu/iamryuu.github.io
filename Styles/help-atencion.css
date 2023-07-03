@@ -262,22 +262,82 @@ body{
 
 footer{
     width: 100%;
-    height: 180px;
+    height: relative;
+    min-height: 20vw;
     background-color: #4D5350;
     color: white;
-    font-family: 'Cabin', sans-serif;
     display: flex;
+    flex-direction: column;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
+    gap: 1em;
+}
+#map{
+    border-radius: 20px;
+    padding: 1em;
+    width: 70%;
+    min-height: 40vw;
+    height:  40vw;
+    max-height: 300px;
+    margin-bottom: 20px;
 }
 
 .foot-area{
-    /* border: 1px solid gray; */
-    width: 250px;
+    height: relative;
+    width: 100%;
+    font-size: 4vw;
     text-align: center;
-    margin: auto;
+    padding: 1em;
 }
 
+.foot-area .icon-red{
+    width: 100%;
+    height: relative;
+    display: flex;
+    gap: 1em;
+    margin: auto;
+    justify-content: center;
+}
+
+.foot-area .icon-red img{
+    width: 100%;
+}
+
+
+
+
+
+@media (min-width: 930px){
+ footer{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    #map{
+        grid-column: 1/4;
+        width: 90%;
+        min-height: 20vw;
+        height:  30vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+    .foot-area{
+        height: relative;
+        width: 100%;
+        font-size: 2vw;
+    }
+    
+    .foot-area .icon-red{
+        width: 100%;
+        height: relative;
+    }
+    
+    .foot-area .icon-red img{
+        width: 100%;
+    }
+}
 /* Mediaquery de menu*/
 @media (max-width: 800px) {
     

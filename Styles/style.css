@@ -295,34 +295,83 @@ body{
     flex-direction: row-reverse;
 }
 
-#map{
-    padding: 1em;
-    width: 100%;
-    min-height: 10vw;
-    height:  80vw;
-    max-height: 300px;
-}
-
 footer{
     width: 100%;
     height: relative;
+    min-height: 20vw;
     background-color: #4D5350;
     color: white;
     display: flex;
+    flex-direction: column;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
+    gap: 1em;
+}
+#map{
+    border-radius: 20px;
+    padding: 1em;
+    width: 70%;
+    min-height: 40vw;
+    height:  40vw;
+    max-height: 300px;
+    margin-bottom: 20px;
 }
 
 .foot-area{
+    height: relative;
     width: 100%;
-    font-size: 50%;
+    font-size: 4vw;
     text-align: center;
-    margin: auto;
     padding: 1em;
 }
 
+.foot-area .icon-red{
+    width: 100%;
+    height: relative;
+    display: flex;
+    gap: 1em;
+    margin: auto;
+    justify-content: center;
+}
+
 .foot-area .icon-red img{
-    width: 15%;
+    width: 100%;
+}
+
+
+
+
+
+@media (min-width: 930px){
+ footer{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    #map{
+        grid-column: 1/4;
+        width: 90%;
+        min-height: 20vw;
+        height:  30vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+    .foot-area{
+        height: relative;
+        width: 100%;
+        font-size: 2vw;
+    }
+    
+    .foot-area .icon-red{
+        width: 100%;
+        height: relative;
+    }
+    
+    .foot-area .icon-red img{
+        width: 100%;
+    }
 }
 
 @media (min-width: 600px){
