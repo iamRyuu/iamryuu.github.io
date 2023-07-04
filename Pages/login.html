@@ -37,13 +37,13 @@
     </header>
 
     <section class="container">
-        <div class="box">
+        <div class="box" id="form">
             <div class="bx1">
                 <h2>E-mail</h2>
-                <input type="text" id="mail" class="inputs">
+                <input type="email" id="mail" class="inputs" required>
                     
                 <h2>Contraseña</h2>
-                <input type="password" id="pass" class="inputs">
+                <input type="password" id="pass" class="inputs" required>
             </div>
 
             <div class="bx2">
@@ -55,6 +55,8 @@
                 <button id="login-button" class="btnAcount" style="background-color: #2CA475;">Iniciar Sesión</button>
                 <button class="btnAcount" style="background-color: #CBBB81;">Registrarse</button>
             </div>
+
+            <p class="warnings" id="warnings"></p>
         </div>
     </section>
 

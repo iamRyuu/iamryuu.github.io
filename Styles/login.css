@@ -266,6 +266,15 @@ body{
     box-shadow: 1px 1px 4px #4D5350;
 }
 
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
 footer{
     width: 100%;
     height: relative;
