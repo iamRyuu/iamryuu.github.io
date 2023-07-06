@@ -2,18 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Estilos -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/Styles/help-oportunidad.css">
-    <title>Oportunidad laboral | HELP</title>
+    <link rel="stylesheet" href="/Styles/crearcuenta.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -42,41 +33,37 @@
         </div>
     </header>
 
-    <section class="container">
+    <div class="container">
         <div class="box">
-            <div class="items">
-                <img src="/src/icons/oportunidadlaboral.png" width="90px">
-                <h2>Oportunidad laboral</h2>
+            <div class="photo">
+                <div class="video">
+                    <video src="" id="foto"></video>
+                </div>
+                <button type="button" id="btn_Photo">Tomar foto</button>
             </div>
 
-            <div class="info">
-                <div class="p1">
-                    <h2>Nombre completo</h2>
-                    <input type="text" class="inputs"  id="name" required>
-                    <label for="name"  class="warnings" id="warnings"></label>
-                    
-                    <h2>E-mail</h2>
-                    <input type="text" class="inputs" id="mail" required>
-                    <label for="mail"  class="warnings" id="warnings1"></label>
-                </div>
+            <div class="bx1">
+                <h2>E-mail</h2>
+                <input type="email" id="mail" class="inputs" required>
+                <label for="mail" class="warnings" id="warnings"></label>
 
-                <div class="p2">
-                    <div class="minibox">
-                        <h2>Número telefónico</h2>
-                        <input type="text" class="inputs" id="num" required>
-                        <label for="num"  class="warnings" id="warnings2"></label>
-                    </div>
-                    
-                    <div class="minibox2">
-                        <h2>Adjuntar CV</h2>
-                        <input type="file" placeholder="creiste mal" id="btnCV"></input required>
-                    </div>
-                </div>
+                <h2>Nombre Completo</h2>
+                <input type="text" id="name" class="inputs" required>
+                <label for="name" class="warnings" id="warnings1"></label>
 
-                <button type="submit" id="btnSend">Enviar</button>
+                <h2>Número telefónico</h2>
+                <input type="number" id="num" class="inputs" required>
+                <label for="num" class="warnings" id="warnings2"></label>
+
+                <h2>Fecha de Nacimiento</h2>
+                <input type="date" id="date" class="inputs" required>
+                <label for="date" class="warnings" id="warnings3"></label>
+
+                <button type="submit" class="btnAcount" id="btn_send">Registrarse</button>
             </div>
         </div>
-    </section>
+    </div>
+
 
     <footer>
         <div class="foot-area">
@@ -113,18 +100,27 @@
         <div class="ubicacion" id="map"></div>
     </footer>
 
+
+
+    <!-- crear cuenta -->
+    <script src="/JavaScript/validation/crear.js"></script>
+    <!-- ------------------------------- -->
+
+    <!-- Scripts para el mapa -->
     <script src="/JavaScript/mapa.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdHNRNQENRBEXBYRv0ZKDMwwpeHADF5XA&callback=iniciarMap"></script>
-
+    <!-- ------------------------------- -->
 
     <!-- Icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- ------------------------------- -->
+
 
     <!-- Script header -->
     <script src="/JavaScript/header.js"></script>
+    <!-- ------------------------------- -->
 
 
-    <script src="/JavaScript/validation/oportunidad.js"></script>
 </body>
 </html>

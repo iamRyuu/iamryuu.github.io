@@ -260,6 +260,14 @@ body{
     margin-top: 12px;
 }
 
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #d21616;
+    margin-bottom: 20px;
+}
+
 footer{
     width: 100%;
     height: relative;
