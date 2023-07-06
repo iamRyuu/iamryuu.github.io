@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
     <link rel="stylesheet" href="/Styles//admin/producto.css">
     <link rel="stylesheet" href="/Styles//admin/admin.css">
-    <title>Admin - Prod | AgroNic</title>
+    <title>Admin - Empleado | AgroNic</title>
 </head>
 <body>
     <div class="container">
@@ -55,30 +55,24 @@
 
         <main>
             <div class="box">
-                <h1>Añadir Producto</h1>
+                <h1>Añadir Empleado</h1>
 
                 <div class="info">
-                    <h2>Nombre del producto</h2>
+                    <h2>Nombre</h2>
                     <input id="name" type="text" class="inputs" placeholder="introducir nombre" required>
                     <label for="name" class="warnings" id="warnings"></label>
 
-                    <h2>Tipo</h2>
-                    <select name="" id="select" class="inputs">
-                        <option value="">--SELECCIONE--</option>
-                        <option value="">Grano básico</option>
-                        <option value="">Producto procesado</option>
-                        <option value="">Servicio</option>
-                        <option value="">Otros</option>
-                    </select>
-                    <label for="select" class="warnings" id="warnings1"></label>
+                    <h2>Apellido</h2>
+                    <input id="Apellido" type="text" class="inputs" placeholder="introducir apellido" required>
+                    <label for="Apellido" class="warnings" id="warnings1"></label>
 
-                    <h2>Proveedor</h2>
-                    <input id="proov" type="text" class="inputs" placeholder="Nombre del proveedor" required>
-                    <label for="proov" class="warnings" id="warnings2"></label>
+                    <h2>Num Cédula</h2>
+                    <input id="ced" type="text" class="inputs" placeholder="Cédula" required>
+                    <label for="ced" class="warnings" id="warnings2"></label>
 
-                    <h2>Precio</h2>
-                    <input id="precio" type="text" class="inputs" placeholder="Introduzca el Precio" required>
-                    <label for="precio" class="warnings" id="warnings3"></label>
+                    <h2>Número Télefonico</h2>
+                    <input id="num" type="number" class="inputs" placeholder="Número Télefonico" required>
+                    <label for="num" class="warnings" id="warnings3"></label>
 
                     <button type="submit" id="btnSend">Añadir</button>
                 </div>
@@ -89,50 +83,46 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>Codigo</th>
                             <th>Nombre</th>
-                            <th>Existencias</th>
-                            <th>Precios</th>
-                            <th>Tipo</th>
+                            <th>Apellido</th>
+                            <th>Num</th>
                             <th>Estado</th>
-                            <th>Detalles</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Maíz</td>
-                            <td>12</td>
-                            <td>C$ 500</td>
-                            <td>Procesado</td>
+                            <td>1016</td>
+                            <td>Jorge</td>
+                            <td>Obando</td>
+                            <td>5828-3975</td>
                             <td class="primary">Habilitado</td>
-                            <td class="warning">Detalles</td>
                         </tr>
 
                         <tr>
-                            <td>Cacao</td>
-                            <td>5</td>
-                            <td>C$ 320</td>
-                            <td>Grano</td>
+                            <td>2014</td>
+                            <td>Alberto</td>
+                            <td>Jarquin</td>
+                            <td>1-800-2020</td>
                             <td class="primary">Habilitado</td>
-                            <td class="warning">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>2023</td>
+                            <td>Gabriel</td>
+                            <td>Aviles</td>
+                            <td>3541-9687</td>
+                            <td class="warning">Vacaciones</td>
+                        </tr>
+
+                        <tr>
+                            <td>2119</td>
+                            <td>Oscar</td>
+                            <td>Danilo</td>
+                            <td>2045-7852</td>
+                            <td class="primary">Habilitado</td>
                         </tr>
                         
-                        <tr>
-                            <td>Arroz</td>
-                            <td>54</td>
-                            <td>C$ 120</td>
-                            <td>Grano</td>
-                            <td class="primary">Habilitado</td>
-                            <td class="warning">Detalles</td>
-                        </tr>
-
-                        <tr>
-                            <td>Trigo</td>
-                            <td>12</td>
-                            <td>C$ 20</td>
-                            <td>Procesado</td>
-                            <td class="primary">Habilitado</td>
-                            <td class="warning">Detalles</td>
-                        </tr>
                         
                     </tbody>
                 </table>
@@ -204,6 +194,6 @@
 
     <!-- scripts para el menu -->
     <script src="/JavaScript/admin.js"></script>
-    <script src="/JavaScript/admin/producto.js"></script>
+    <script src="/JavaScript/admin/empleado.js"></script>
 </body>
 </html>
