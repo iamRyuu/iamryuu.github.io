@@ -14,7 +14,7 @@ login_button.addEventListener('click', () => {
     parrafo.innerHTML = ""
 
     if (mail.value == admin_mail && pass.value == password) {
-        location.href = "../Pages/admin.html";
+        location.href = "../Pages/admin/admin.html";
     }
     if(!regexEmail.test(mail.value)){
         warnings += `El email no es valido <br>`
