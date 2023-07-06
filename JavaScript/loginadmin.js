@@ -5,6 +5,7 @@ const mail = document.getElementById('mail');
 const pass = document.getElementById('pass');
 
 let login_button = document.getElementById('login-button');
+let btn_account = document.getElementById('btn_account');
 
 login_button.addEventListener('click', () => {
     let warnings = ""
@@ -29,4 +30,9 @@ login_button.addEventListener('click', () => {
         parrafo.innerHTML = "Enviado"
     }
 
+})
+
+
+btn_account.addEventListener('click' ,()=>{
+    location.href = '../Pages/crearcuenta.html'
 })
