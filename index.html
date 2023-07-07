@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Styles/videoplayer.css">
 
-
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
     <!-- slides -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -124,6 +125,12 @@
         </div>
     </section>
 
+    <div class="cont">
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+            <source src="/src/farm.mp4" type="video/mp4" />
+        </video>
+    </div>
+
     <footer>
         <div class="foot-area">
             <h2>AgroNIC</h2>    
@@ -158,6 +165,9 @@
 
         <div class="ubicacion" id="map"></div>
     </footer>
+
+
+    <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
 
     <script src="/JavaScript/mapa.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdHNRNQENRBEXBYRv0ZKDMwwpeHADF5XA&callback=iniciarMap"></script>
