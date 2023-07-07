@@ -17,6 +17,7 @@ let warnings = document.getElementById('warnings');
 let warnings1 = document.getElementById('warnings1');
 let warnings2 = document.getElementById('warnings2');
 let warnings3 = document.getElementById('warnings3');
+const input = document.querySelectorAll('input');
 
 btn.addEventListener('click', () =>{
     if(!name.checkValidity()){
@@ -31,5 +32,10 @@ btn.addEventListener('click', () =>{
     if(!date.checkValidity()){
         warnings3.innerHTML = date.validationMessage;
     }
+
+    if(name.checkValidity() && mail.checkValidity() && num.checkValidity() && date.checkValidity()){
+        input.forEach(input => input.value = '');
+        alert("Datos enviados :D");
+    } 
 
 })

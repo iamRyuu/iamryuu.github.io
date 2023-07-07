@@ -21,7 +21,7 @@ btnSend.addEventListener('click' , ()=>{
 
     if(name.checkValidity() && Apellido.checkValidity() && ced.checkValidity() && num.checkValidity()){
         input.forEach(input => input.value = '');
-        alert("Producto agregado :D");
+        alert("Empleado agregado :D");
     } 
     
 })
