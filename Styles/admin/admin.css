@@ -6,6 +6,7 @@
     --color-danger: #ff7782;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
+    --color-deny: #ff5d55;
     --color-white: #fff;
     --color-info-dark: #7d8da1;
     --color-info-light: #dce1eb;
@@ -142,6 +143,10 @@ b{
     color: var(--color-warning);
 }
 
+.deny{
+    color: var(--color-deny); 
+}
+
 aside{
     height: 100vh;
 }
@@ -159,8 +164,8 @@ aside .logo{
 }
 
 aside .logo img{
-    width: 2rem;
-    height: 2rem;
+    width: 4.5rem;
+    height: 1.8rem;
 }
 
 aside .close{

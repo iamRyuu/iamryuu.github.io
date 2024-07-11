@@ -3,191 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="stylesheet" href="/Styles/videoplayer.css">
+    
 
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
-    <!-- slides -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <title>HOME | AgroNic</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="/Styles//admin/admin.css">
+    <title>Admin - Page | CitasFIA</title>
 </head>
 <body>
-    <header>
-        <label class="logo"><img src="/src/icons/logo.png" alt=""><p>AgroNic</p></label>
-        <div class="group">
-            <ul class="navigation">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/Pages/about.html">Acerca</a></li>
-                <li><a href="/Pages/help.html">Ayuda</a></li>
-                <li><a href="/Pages/login.html">Iniciar Sesión</a></li>
-                <li><a href="/Pages/pay.html">
-                    <ion-icon name="cart-outline"></ion-icon>
-                </a></li>
-            </ul>
-            <div class="search">
-                <span class="icon">
-                    <ion-icon name="search-outline" class="searchbtn"></ion-icon>
-                    <ion-icon name="close-outline" class="closebtn"></ion-icon>
-                </span>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="/src/icons/logo.webp" alt="">
+                    <h2>Citas FIA</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
             </div>
-            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
-        </div>
-        
-        <div class="searchbox">
-            <input type="text" placeholder="Buscar . . .">
-        </div>
-    </header>
 
-    <div class="wallpaper"></div>
+            <div class="sidebar">
+                <a href="#" >
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Estadísticas</h3>
+                </a>
+                
+                <a href="/Index.html" class="active" >
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Citas</h3>
+                </a>
 
-    <section class="grain">
-        <div class="text">
-            <h2>Cultivos</h2>
-        </div>
-        
-       
+                <a href="/empleado.html">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Personal</h3>
+                </a>
+                
+                
+                <a href="/prod.html" >
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Coordinadores</h3>
+                </a>
 
-        <div class="grain-items">
-            <div class="items">
-                <img src="/src/product/maiz.png">
-                <h3>Maíz</h3>
-                <a href="/Pages/info-maiz.html">Acerca de...</a>
+                <a href="/index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Salir</h3>
+                </a>
             </div>
+        </aside>
+        <!-- aqui termina el aside -->
+
+        <main>
+            <h1>Vista de administrador</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Citas Totales</h3>
+                            <h1>1,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Hace 24 horas</small>
+                </div>
+                <!-- /*-----------FIN DE LA PRIMERA CARD: ventas-----------*/ -->
+
+                <div class="expenses">
+                    <span class="material-icons-sharp">bar_chart</span>
+
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Citas canceladas</h3>
+                            <h1>250</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Hace 24 horas</small>
+                </div>
+                <!-- /*-----------FIN DE LA PRIMERA CARD: Gastos-----------*/ -->
+
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Citas completadas</h3>
+                            <h1>774</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>84%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Hace 24 horas</small>
+                </div>
+                <!-- /*-----------FIN DE LA PRIMERA CARD: Ingreso-----------*/ -->
+
+            </div>
+            <!-- fin de las cards -->
+
+            <div class="recent-orders">
+                <h2>Citas Recientes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre dl estudiante</th>
+                            <th>Numero de CIF</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pablo Emilio</td>
+                            <td>1016</td>
+                            <td>08/6/24</td>
+                            <td class="success">Completado</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Joaquin Guzman</td>
+                            <td>701</td>
+                            <td>15/05/15</td>
+                            <td class="warning">Pendiente</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Agapito Díaz</td>
+                            <td>505</td>
+                            <td>20/06/22</td>
+                            <td class="success">Completado</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Luis R Conriquez</td>
+                            <td>6969</td>
+                            <td>14/06/24</td>
+                            <td class="warning">En Proceso</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+
+                        <tr>
+                            <td>Jorge Obando</td>
+                            <td>2002</td>
+                            <td>16/10/02</td>
+                            <td class="deny">Cancelada</td>
+                            <td class="primary">Detalles</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Mostrar Todo</a>
+            </div>
+        </main>
+        <!-- Fin del main -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toogler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hola! <b>Ing. Jahir</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/src/profile-pic/admin.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- AQUI CULMINA EL TOP -->
             
-            <div class="items">
-                <img src="/src/product/arroz.png">
-                <h3>Arroz</h3>
-                <a href="/Pages/info-arroz.html">Acerca de...</a>
-            </div>
-            
-            <div class="items">
-                <img src="/src/product/trigo.png">
-                <h3>Trigo</h3>
-                <a href="/Pages/info-trigo.html">Acerca de...</a>
-            </div>
+            <div class="recent-updates">
+                <h2>Actualizaciones Recientes</h2>
 
-            <div class="items">
-                <img src="/src/product/cafe.png">
-                <h3>Café</h3>
-                <a href="/Pages/info-cafe.html">Acerca de...</a>
-            </div>
-
-            <div class="items">
-                <img src="/src/product/cacao.png">
-                <h3>Cacao</h3>
-                <a href="/Pages/info-cacao.html">Acerca de...</a>
-            </div>
-
-            <div class="items">
-                <img src="/src/product/frijoles.png">
-                <h3>Frijoles</h3>
-                <a href="/Pages/info-frijoles.html">Acerca de...</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="another-area">
-        <div class="text">
-            <h2 style="color: #413F3F; border: none;">Otros Cultivos</h2>
-        </div>
-
-        <div class="area-cultivos">
-            <div class="tarjetas">
-                <div class="area">
-                    <img src="/src/services/tractor.png" alt="">
-                    <div class="text-area">
-                        <img src="/src/icons/icontruck.png" alt="">
-                        <h3>Maquinarias</h3>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo1.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Juan Calderito</b>Actualicen la Base de Datos</p>
+                            <small class="text-muted">Hace 2 horas</small>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="area" id="inverse-area">
-                    <img src="/src/services/agua.png" alt="">
-                    <div class="text-area">
-                        <img src="/src/icons/logoagua.png" alt="">
-                        <h3>Sistema de Riego</h3>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mr. Musculo</b>La version de telefono ya esta lista.</p>
+                            <small class="text-muted">Hace 5 minutos</small>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="area">
-                    <img src="/src/services/plaga.png" alt="">
-                    <div class="text-area">
-                        <img src="/src/icons/logoplaga.png" alt="">
-                        <h3>Control de Plagas</h3>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Lio Nel Me SI</b> Nueva interfaz</p>
+                            <small class="text-muted">Hace 1 año</small>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <!----------------fin de las actualizaciones recientes------------>
 
-    <div class="cont">
-        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
-            <source src="/src/farm.mp4" type="video/mp4" />
-        </video>
+            <div class="sales-analytics">
+                <h2>Analisis del sistema</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">favorite</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Citas Informativas</h3>
+                            <small class="text-muted">Hace 24 horas</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>1100</h3>
+                    </div>
+                </div>
+
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">error</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Citas de alto impacto</h3>
+                            <small class="text-muted">Hace 24 horas</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+
+                <div class="item customer">
+                    <div class="icon">
+                        <span class="material-icons-sharp">thumb_up</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Citas de bajo impacto</h3>
+                            <small class="text-muted">Hace 24 horas</small>
+                        </div>
+                        <h5 class="success">+25%</h5>
+                        <h3>87</h3>
+                    </div>
+                </div>
+
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">edit_calendar</span>
+                        <h3>Agendar Cita</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <div class="foot-area">
-            <h2>AgroNIC</h2>    
-        </div>
 
-        <div class="foot-area">
-            <h2>Contactos</h2>
-            <p>Teléfono: +505 58283975</p>
-            <p>Correo: agro@nic.com</p> 
-        </div>
-
-        <div class="foot-area">
-            <h2>Social Media</h2>
-            <div class="icon-red">
-                <a href="https://www.instagram.com/jxrg16_/">
-                    <img src="/src/icons/iconig.png" alt="">
-                </a>
-                
-                <a href="https://www.facebook.com/profile.php?id=100084459163873">
-                    <img src="/src/icons/iconfb.png" alt="">
-                </a>
-                
-                <a href="https://api.whatsapp.com/send/?phone=%2B50558283975&text&type=phone_number&app_absent=0">
-                    <img src="/src/icons/iconwsp.png" alt="">
-                </a>
-                
-                <a href="#">
-                    <img src="/src/icons/icontwt.png" alt="">
-                </a>
-            </div>
-        </div>
-
-        <div class="ubicacion" id="map"></div>
-    </footer>
-
-
-    <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
-
-    <script src="/JavaScript/mapa.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdHNRNQENRBEXBYRv0ZKDMwwpeHADF5XA&callback=iniciarMap"></script>
-
-    <!-- Icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- Script header -->
-    <script src="/JavaScript/header.js"></script>
-
-    <!-- slides -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="/JavaScript/slides.js"></script>
-    
-    
-    <!-- Script geolocalizacion -->
-
-    <script src="/JavaScript/geo.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdHNRNQENRBEXBYRv0ZKDMwwpeHADF5XA&callback=iniciarMap"></script>
-
+    <!-- scripts para el menu -->
+    <script src="/JavaScript/admin.js"></script>
 </body>
 </html>

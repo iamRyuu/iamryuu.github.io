@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="/Styles//admin/producto.css">
+    <link rel="stylesheet" href="/Styles//admin/admin.css">
+    <title>Admin - Empleado | Citas FIA</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="/src/icons/logo.webp" alt="">
+                    <h2>Citas FIA</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" >
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Estadísticas</h3>
+                </a>
+                
+                <a href="/Index.html" >
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Citas</h3>
+                </a>
+
+                <a href="/empleado.html" class="active">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Personal</h3>
+                </a>
+                
+                
+                <a href="/prod.html" >
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Coordinadores</h3>
+                </a>
+
+                <a href="/index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Salir</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- aqui termina el aside -->
+
+        <main>
+            <div class="box">
+                <h1>Añadir estudiante</h1>
+
+                <div class="info">
+                    <h2>Nombre</h2>
+                    <input id="name" type="text" class="inputs" placeholder="introducir nombre" required>
+                    <label for="name" class="warnings" id="warnings"></label>
+
+                    <h2>Apellido</h2>
+                    <input id="Apellido" type="text" class="inputs" placeholder="introducir apellido" required>
+                    <label for="Apellido" class="warnings" id="warnings1"></label>
+
+                    <h2>Numero CIF</h2>
+                    <input id="ced" type="text" class="inputs" placeholder="CIF" required>
+                    <label for="ced" class="warnings" id="warnings2"></label>
+
+                    <h2>Número Télefonico</h2>
+                    <input id="num" type="number" class="inputs" placeholder="Número Télefonico" required>
+                    <label for="num" class="warnings" id="warnings3"></label>
+
+                    <button type="submit" id="btnSend">Añadir</button>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h1>Lista de Empleados</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Codigo CIF</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Num</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1016</td>
+                            <td>Jorge</td>
+                            <td>Obando</td>
+                            <td>5828-3975</td>
+                            <td class="primary">Estudiante</td>
+                        </tr>
+
+                        <tr>
+                            <td>2014</td>
+                            <td>Ariel</td>
+                            <td>Montoya</td>
+                            <td>1-800-2020</td>
+                            <td class="primary">Estudiante</td>
+                        </tr>
+
+                        <tr>
+                            <td>2023</td>
+                            <td>Josue</td>
+                            <td>Cano</td>
+                            <td>3541-9687</td>
+                            <td class="warning">Egresado</td>
+                        </tr>
+
+                        <tr>
+                            <td>2119</td>
+                            <td>Tony</td>
+                            <td>Montalvan</td>
+                            <td>2045-7852</td>
+                            <td class="primary">Habilitado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <!-- Fin del main -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toogler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hola! <b>Ing. Jahir</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/src/profile-pic/admin.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- AQUI CULMINA EL TOP -->
+            
+            <div class="recent-updates">
+                <h2>Actualizaciones Recientes</h2>
+
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo1.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mega Mente</b> Se cayó el server</p>
+                            <small class="text-muted">Hace 2 horas</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Peso Plomo</b> La verdad ojala no vayamos a convo.</p>
+                            <small class="text-muted">Hace 5 minutos</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/src/profile-pic/photo2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Maicol Towers</b> zzzZZZZZ</p>
+                            <small class="text-muted">Hace 1 año</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------fin de las actualizaciones recientes------------>
+        </div>
+    </div>
+
+
+    <!-- scripts para el menu -->
+    <script src="/JavaScript/admin.js"></script>
+    <script src="/JavaScript/admin/empleado.js"></script>
+</body>
+</html>
